@@ -1,7 +1,7 @@
 import json
 import unittest
 from pathlib import Path
-from commodity_graph import read_members, roles, stage_edges, STAGES
+from commodity_graph import read_members, roles, stage_edges, STAGES, related_labels
 
 class CommodityTests(unittest.TestCase):
     def test_explicit_columns(self):
@@ -18,6 +18,35 @@ class CommodityTests(unittest.TestCase):
         self.assertEqual(len(edges),1)
         self.assertEqual((edges[0]['source'],edges[0]['target']),('a','c'))
         self.assertTrue(any(g['reason']=='missing_target_stage' for g in gaps))
+    def test_cold_chain_aliases_and_exclusions(self):
+        cases=[('blackberry','Blackberries','Blackberry'),
+               ('grapefruit','Grapefruit','Grapefruit'),
+               ('pear','Asian Pears','Pear Packing (Client Profile Products only)'),
+               ('celery','Celery','Celery Hearts'),
+               ('cucumber','Cucumbers','Cucumbers'),
+               ('asparagus','Asparagus','Asparagus')]
+        for commodity,crop,product in cases:
+            with self.subTest(commodity=commodity):
+                row=dict(crop_labels=crop,product_service_labels=product,ambiguous_labels='')
+                self.assertEqual(roles(row,commodity),['crop','general_product'])
+        for commodity,term in [('pear','Spearmint'),('pear','Pear Trees'),('cucumber','Seed (Cucumber)'),('blackberry','Blackberry Jam')]:
+            row=dict(crop_labels=term,product_service_labels=term,ambiguous_labels='')
+            self.assertEqual(roles(row,commodity),[])
+        self.assertEqual(related_labels(dict(crop_labels='Spearmint',product_service_labels='',ambiguous_labels=''),'pear'),[])
+        self.assertTrue(related_labels(dict(crop_labels='Blackberries',product_service_labels='',ambiguous_labels=''),'blackberry'))
+    def test_cold_chain_coverage_and_outgoing_counts(self):
+        bundle=json.loads((Path(__file__).resolve().parents[1]/'visualizations'/'graphs.json').read_text())
+        from collections import Counter
+        expected={'blackberry':(46,30,27),'grapefruit':(29,19,13),'pear':(55,43,16),
+                  'celery':(62,36,38),'cucumber':(61,44,21),'asparagus':(24,9,18)}
+        for commodity,(total,growers,products) in expected.items():
+            graph=bundle['graphs'][commodity]
+            self.assertEqual((len(graph['nodes']),graph['summary']['stage_counts']['crop'],graph['summary']['stage_counts']['general_product']),(total,growers,products))
+            outgoing=Counter(e['source'] for e in graph['edges'])
+            for source in graph['nodes']:
+                targets=[n for n in graph['nodes'] if 'general_product' in n['roles'] and n['latitude'] is not None and n['id']!=source['id']]
+                count=min(bundle['k'],len(targets)) if 'crop' in source['roles'] and source['latitude'] is not None else 0
+                self.assertEqual(outgoing[source['id']],count)
     def test_output(self):
         graphs=json.loads((Path(__file__).resolve().parents[1] / 'visualizations' / 'graphs.json').read_text())['graphs']
         for graph in graphs.values():

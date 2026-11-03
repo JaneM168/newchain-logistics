@@ -11,10 +11,11 @@ python -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 .venv/bin/python logistics/commodity_graph.py -k 5
 .venv/bin/python logistics/render_commodity_graph.py
+.venv/bin/python logistics/render_cold_chain.py
 .venv/bin/python -m unittest discover -s logistics -v
 ```
 
-Open [the interactive visualization](visualizations/network.html) in a browser. Select coffee or pecan, switch between stage and geographic views, search business names and select a node for details. The HTML is self-contained. [PNG](visualizations/commodity_networks.png) and [SVG](visualizations/commodity_networks.svg) exports are also included. Regenerate with `-k` to choose the number of next-stage neighbors; `--input` and `--out` override the input CSV and interactive/data output directory. The static renderer reads the default `visualizations` directory.
+Open [the interactive visualization](visualizations/network.html) in a browser. Select coffee, pecan, blackberry, grapefruit, pear, celery, cucumber or asparagus, switch between stage and geographic views, search business names and select a node for details. The HTML is self-contained. [PNG](visualizations/commodity_networks.png) and [SVG](visualizations/commodity_networks.svg) exports are also included. Regenerate with `-k` to choose the number of next-stage neighbors; `--input` and `--out` override the input CSV and interactive/data output directory. The static renderer reads the default `visualizations` directory.
 
 ## Model
 
@@ -55,3 +56,22 @@ Outputs include per-commodity JSON, node/edge/review CSVs, combined graphs.json 
 Verify physical production sites, geocode street addresses with match provenance, and add travel-time or distance cutoffs for local logistics clusters. Expand beyond organic via producer directories, cooperatives, food hubs and extension networks, deduplicating sites and preserving provenance. Sales data is not included: join future sales by stable business/site ID, time period, commodity, volume, units, destination and temperature needs. These coffee and pecan networks alone do not establish demand for refrigeration or quantify logistics impact.
 
 The existing scraper is unchanged. Its CLI can be inspected with `python ccof_scraper.py --help`; live scraping is not validated. Follow its terms/robots and identifying-contact guidance before collecting new records.
+
+## Cold-chain produce networks
+
+The six produce networks use **crop grower (green) → products/services (purple)** with the same K=5 next-stage rule. Open the commodity selector in [the interactive graph](visualizations/network.html), or inspect the [six-commodity overview](visualizations/cold_chain_networks.png). Each commodity also has a labeled `<commodity>_network.png` / `.svg`, JSON and node/edge/review CSVs in `visualizations/`.
+
+| Commodity | Unique businesses | Grower roles | Product/service roles | City-located businesses | Links |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Blackberry | 46 | 30 | 27 | 37 | 110 |
+| Grapefruit | 29 | 19 | 13 | 27 | 85 |
+| Pear | 55 | 43 | 16 | 45 | 175 |
+| Celery | 62 | 36 | 38 | 53 | 155 |
+| Cucumber | 61 | 44 | 21 | 53 | 200 |
+| Asparagus | 24 | 9 | 18 | 20 | 30 |
+
+Role counts overlap: a grower can also list the commodity as a product. Businesses may appear in multiple commodity networks, so totals across commodities are not unique farm counts.
+
+Singular/plural labels are explicit aliases. Pear includes Asian Pears and the explicit Pear Packing service; celery includes Celery Hearts as a product. Seed (Cucumber), Pear Trees and unrelated Spearmint are not fresh-produce roles. A blackberry label in an uncertain 17-field record is exported for review rather than classified. The selected blackberry businesses include 39 California addresses and 7 in Baja California/Baja California Sur; cucumber includes 58 California and 3 Baja California addresses. The US city lookup leaves the Mexican addresses unresolved. The other four new commodity networks contain California addresses only. Unlisted processing stages are not inferred. A products/services listing does not prove the business owns refrigeration, provides logistics, buys the crop or trades with a linked grower.
+
+These networks help explore cold-chain candidates, but do not assign a common storage temperature or establish cold-chain compatibility. Commodity-specific temperature, humidity, chilling sensitivity, ethylene exposure, seasonality, volumes, vehicles and delivery windows must be collected before route or mixed-load planning. City approximations and unrestricted neighbor distances are still limitations; no verified street geocodes or driving times were added in this extension.

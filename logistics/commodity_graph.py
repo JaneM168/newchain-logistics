@@ -1,4 +1,5 @@
-"""Stage-constrained coffee and pecan business networks, with auditable roles."""
+"""Stage-constrained commodity business networks, with auditable roles."""
+import re
 import argparse
 import csv
 import heapq
@@ -9,6 +10,20 @@ import geonamescache
 from geo_utils import distance, normalize
 
 STAGES = {'coffee': ['crop', 'green_processing', 'roasted', 'general_product'], 'pecan': ['crop', 'general_product']}
+FRESH_LABELS = {
+    'pecan': {'pecan', 'pecans'},
+    'blackberry': {'blackberry', 'blackberries'},
+    'grapefruit': {'grapefruit', 'grapefruits'},
+    'pear': {'pear', 'pears', 'asian pear', 'asian pears'},
+    'celery': {'celery'},
+    'cucumber': {'cucumber', 'cucumbers'},
+    'asparagus': {'asparagus'},
+}
+COLD_COMMODITIES = ['blackberry', 'grapefruit', 'pear', 'celery', 'cucumber', 'asparagus']
+STAGES.update({commodity: ['crop', 'general_product'] for commodity in COLD_COMMODITIES})
+# Explicit services/fresh forms; no frozen, juice, seeds or nursery trees inferred.
+PRODUCT_LABELS = {**FRESH_LABELS, 'celery': {'celery', 'celery hearts'},
+                  'pear': FRESH_LABELS['pear'] | {'pear packing (client profile products only)'}}
 COLORS = {'crop': '#16803c', 'green_processing': '#c17a00', 'roasted': '#79503b', 'general_product': '#7555ca'}
 
 
@@ -50,11 +65,23 @@ def roles(row, commodity):
         if 'coffee' in products:
             result.append('general_product')
     else:
-        if crops & {'pecan', 'pecans'}:
+        if crops & FRESH_LABELS[commodity]:
             result.append('crop')
-        if products & {'pecan', 'pecans'}:
+        if products & PRODUCT_LABELS[commodity]:
             result.append('general_product')
     return result
+
+
+def related_labels(row, commodity):
+    # Boundaries exclude unrelated Spearmint while still capturing Pear Trees
+    # and Seed (Cucumber) for review, and Blackberry/Blackberries variants.
+    stems = {'blackberry': r'blackberr(?:y|ies)', 'pear': r'pears?',
+             'cucumber': r'cucumbers?', 'pecan': r'pecans?',
+             'grapefruit': r'grapefruits?', 'celery': r'celery',
+             'asparagus': r'asparagus', 'coffee': r'coffee'}
+    pattern = r'\b' + stems[commodity] + r'\b'
+    return [value.strip() for field in ['ambiguous_labels', 'product_service_labels', 'crop_labels']
+            for value in row[field].split(';') if re.search(pattern, value, re.I)]
 
 
 def city_index():
@@ -117,7 +144,7 @@ def main():
         ap.error('K must be positive')
     rows = list(read_members(args.input))
     index, states = city_index()
-    bundle = dict(k=args.k, colors=COLORS, graphs={})
+    bundle = dict(k=args.k, colors=COLORS, cold_commodities=COLD_COMMODITIES, graphs={})
     args.out.mkdir(parents=True, exist_ok=True)
     for commodity, stages in STAGES.items():
         nodes, review = [], []
@@ -125,7 +152,7 @@ def main():
             assigned = roles(row, commodity)
             if assigned:
                 nodes.append(dict(row, id=row['url'], roles=assigned, **locate(row,index,states)))
-            elif commodity in (row['ambiguous_labels']+' '+row['product_service_labels']+' '+row['crop_labels']).casefold():
+            elif related_labels(row, commodity):
                 review.append(dict(row, reason='category_unverified' if row['ambiguous_labels'] else 'related_label_outside_requested_stages'))
         edges, gaps = stage_edges(nodes, stages, args.k)
         graph = dict(commodity=commodity, stages=stages, nodes=nodes, edges=edges, gaps=gaps,
