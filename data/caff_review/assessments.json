@@ -1,0 +1,1671 @@
+[
+  {
+    "business_id": "60163",
+    "name": "Old California Botanicals",
+    "commodity": "grapefruit",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/redlands/fruit/old-california-botanicals/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "55784",
+    "name": "Santa Cruz Permaculture Farm",
+    "commodity": "blackberry",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/pescadero/fruit/santa-cruz-permaculture-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "55653",
+    "name": "Gold Acre Farm",
+    "commodity": "grapefruit",
+    "roles": [
+      "seller"
+    ],
+    "grower_status": "not_established",
+    "disposition": "supported_role",
+    "assessment_note": "Grapefruit appears in products; subscriptions/mail orders support selling. Growing statement describes mandarins, not grapefruit.",
+    "listing_url": "https://caff.org/farms/united-states/california/riverside/fruit/gold-acre-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "55634",
+    "name": "Sunsets & Citrus Family Farm",
+    "commodity": "grapefruit",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/riverside/fruit/sunsets-citrus-family-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "55634",
+    "name": "Sunsets & Citrus Family Farm",
+    "commodity": "pear",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/riverside/fruit/sunsets-citrus-family-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "54139",
+    "name": "5 Stones Family Farm",
+    "commodity": "blackberry",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/lincoln/fruit/5-stones-family-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "54139",
+    "name": "5 Stones Family Farm",
+    "commodity": "pear",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/lincoln/fruit/5-stones-family-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "50231",
+    "name": "Twin Peaks Orchards, Inc",
+    "commodity": "grapefruit",
+    "roles": [],
+    "grower_status": "not_established",
+    "disposition": "role_unknown",
+    "assessment_note": "Description identifies a fruit/vegetable farm but does not explain which listed commodities it grows versus sources.",
+    "listing_url": "https://caff.org/farms/united-states/california/newcastle/fruit/twin-peaks-orchards-inc/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "50231",
+    "name": "Twin Peaks Orchards, Inc",
+    "commodity": "pear",
+    "roles": [],
+    "grower_status": "not_established",
+    "disposition": "role_unknown",
+    "assessment_note": "Description identifies a fruit/vegetable farm but does not explain which listed commodities it grows versus sources.",
+    "listing_url": "https://caff.org/farms/united-states/california/newcastle/fruit/twin-peaks-orchards-inc/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "46509",
+    "name": "Silvia Organic Farm",
+    "commodity": "cucumber",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/lancaster/fruit/silvia-organic-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "46354",
+    "name": "ABC Farms",
+    "commodity": "pear",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/fortuna/fruit/abc-farms/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "39447",
+    "name": "Old Grove Orange",
+    "commodity": "blackberry",
+    "roles": [
+      "seller"
+    ],
+    "grower_status": "not_established",
+    "disposition": "supported_role",
+    "assessment_note": "Farm and 25-grower food hub; blackberry sourcing cannot be assigned to this individual farm.",
+    "listing_url": "https://caff.org/farms/united-states/california/redlands/fruit/old-grove-orange/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "39441",
+    "name": "West Stillwater Farm",
+    "commodity": "pear",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/redding/fruit/west-stillwater-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "39437",
+    "name": "Solo Acre Farm",
+    "commodity": "cucumber",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/redwood-valley/vegetables/solo-acre-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "36977",
+    "name": "The Farm at Worman Mill",
+    "commodity": "cucumber",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/ahwahnee/vegetables/the-farm-at-worman-mill/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "36793",
+    "name": "Pollinate Farm",
+    "commodity": "cucumber",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/oakland/vegetables/pollinate-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "32330",
+    "name": "Esperanza Community Farms",
+    "commodity": "celery",
+    "roles": [
+      "seller"
+    ],
+    "grower_status": "not_established",
+    "disposition": "supported_role",
+    "assessment_note": "CSA explicitly sources some produce from another cooperative; celery/cucumber growing not attributed to own site.",
+    "listing_url": "https://caff.org/farms/united-states/california/watsonville/vegetables/esperanza-community-farms/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "32330",
+    "name": "Esperanza Community Farms",
+    "commodity": "cucumber",
+    "roles": [
+      "seller"
+    ],
+    "grower_status": "not_established",
+    "disposition": "supported_role",
+    "assessment_note": "CSA explicitly sources some produce from another cooperative; celery/cucumber growing not attributed to own site.",
+    "listing_url": "https://caff.org/farms/united-states/california/watsonville/vegetables/esperanza-community-farms/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "31943",
+    "name": "BURNS BLOSSOM FARM",
+    "commodity": "cucumber",
+    "roles": [],
+    "grower_status": "not_established",
+    "disposition": "role_unknown",
+    "assessment_note": "Generic farming/practice description does not establish commodity-specific production or selling.",
+    "listing_url": "https://caff.org/farms/united-states/california/chico/vegetables/burns-blossom-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "32037",
+    "name": "Solorios organic",
+    "commodity": "blackberry",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/san-juan-bautista/fruit/solorios-organic/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "29513",
+    "name": "Shanley Farms",
+    "commodity": "coffee",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/morro-bay/fruit/shanley-farms/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "23028",
+    "name": "Farmboy Organics",
+    "commodity": "grapefruit",
+    "roles": [
+      "grower",
+      "seller"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/winters/vegetables/farmboy-organics/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "23028",
+    "name": "Farmboy Organics",
+    "commodity": "cucumber",
+    "roles": [
+      "grower",
+      "seller"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/winters/vegetables/farmboy-organics/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "20743",
+    "name": "Zava Ranch",
+    "commodity": "grapefruit",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/somis/fruit/zava-ranch/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "19882",
+    "name": "Balakian Farms",
+    "commodity": "cucumber",
+    "roles": [
+      "grower",
+      "seller"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/reedley/fruit/balakian-farms/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "17595",
+    "name": "Lindsay Farm",
+    "commodity": "pear",
+    "roles": [
+      "grower",
+      "seller"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/nevada-city/vegetables/lindsay-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "17595",
+    "name": "Lindsay Farm",
+    "commodity": "cucumber",
+    "roles": [
+      "grower",
+      "seller"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/nevada-city/vegetables/lindsay-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "16808",
+    "name": "Siembra y Cosecha Farm",
+    "commodity": "cucumber",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/fresno/vegetables/siembra-y-cosecha-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "16590",
+    "name": "JSM Organics",
+    "commodity": "blackberry",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/prunedale/vegetables/jsm-organics/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "16590",
+    "name": "JSM Organics",
+    "commodity": "celery",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/prunedale/vegetables/jsm-organics/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "16582",
+    "name": "G & J’S LITTLE FARM LLC",
+    "commodity": "pear",
+    "roles": [],
+    "grower_status": "not_established",
+    "disposition": "role_unknown",
+    "assessment_note": "Handcrafted/grown products for kids, pets and home does not attribute pear growing or selling.",
+    "listing_url": "https://caff.org/farms/united-states/california/mariposa/eggs/g-js-little-farm-llc/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "16394",
+    "name": "City Farm SLO",
+    "commodity": "celery",
+    "roles": [],
+    "grower_status": "not_established",
+    "disposition": "role_unknown",
+    "assessment_note": "Mission concerns education and access to farm land; own commodity production/sales unclear.",
+    "listing_url": "https://caff.org/farms/united-states/california/san-luis-obispo/vegetables/city-farm-slo/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "16394",
+    "name": "City Farm SLO",
+    "commodity": "cucumber",
+    "roles": [],
+    "grower_status": "not_established",
+    "disposition": "role_unknown",
+    "assessment_note": "Mission concerns education and access to farm land; own commodity production/sales unclear.",
+    "listing_url": "https://caff.org/farms/united-states/california/san-luis-obispo/vegetables/city-farm-slo/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "16242",
+    "name": "Kibo Farm",
+    "commodity": "pear",
+    "roles": [
+      "grower",
+      "seller"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/santa-rosa/fruit/kibo-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "16203",
+    "name": "Loving Nature Farm",
+    "commodity": "blackberry",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/clarksburg/fruit/loving-nature-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "16203",
+    "name": "Loving Nature Farm",
+    "commodity": "pear",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/clarksburg/fruit/loving-nature-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "16156",
+    "name": "The Peach Jamboree",
+    "commodity": "pear",
+    "roles": [
+      "grower",
+      "seller"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/oroville/fruit/the-peach-jamboree/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "15693",
+    "name": "Hathaway Hills Orchards",
+    "commodity": "blackberry",
+    "roles": [
+      "processor",
+      "seller"
+    ],
+    "grower_status": "not_established",
+    "disposition": "supported_role",
+    "assessment_note": "Known jam/fruit-butter seller and processor. Fresh blackberry/pear handling and own production remain unresolved.",
+    "listing_url": "https://caff.org/farms/united-states/california/newcastle/fruit/hathaway-hills-orchards/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "15693",
+    "name": "Hathaway Hills Orchards",
+    "commodity": "pear",
+    "roles": [
+      "processor",
+      "seller"
+    ],
+    "grower_status": "not_established",
+    "disposition": "supported_role",
+    "assessment_note": "Known jam/fruit-butter seller and processor. Fresh blackberry/pear handling and own production remain unresolved.",
+    "listing_url": "https://caff.org/farms/united-states/california/newcastle/fruit/hathaway-hills-orchards/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "15486",
+    "name": "Ferrer Farm",
+    "commodity": "cucumber",
+    "roles": [
+      "grower",
+      "seller"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/madera/vegetables/ferrer-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "15410",
+    "name": "Dwelley Family Farms",
+    "commodity": "blackberry",
+    "roles": [
+      "grower",
+      "seller"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/oakley/vegetables/dwelley-family-farms/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "15355",
+    "name": "Weiser Family Farms",
+    "commodity": "pear",
+    "roles": [],
+    "grower_status": "not_established",
+    "disposition": "role_unknown",
+    "assessment_note": "Pears appear in a historical founding story but not the current product list; current pear role unresolved.",
+    "listing_url": "https://caff.org/farms/united-states/california/lancaster/vegetables/weiser-family-farms/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "14724",
+    "name": "Beet Generation Farm",
+    "commodity": "cucumber",
+    "roles": [
+      "grower",
+      "seller"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/sebastopol/vegetables/beet-generation-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "14388",
+    "name": "Fox Sparrow Farm",
+    "commodity": "blackberry",
+    "roles": [],
+    "grower_status": "not_established",
+    "disposition": "excluded_noncommodity_mention",
+    "assessment_note": "Blackberry is described as browse for sheep, not a fruit grown or sold. Excluded from blackberry commodity ledger.",
+    "listing_url": "https://caff.org/farms/united-states/california/petaluma/eggs/fox-sparrow-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "12374",
+    "name": "Sow a Heart Farm",
+    "commodity": "cucumber",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/fillmore/fruit/sow-a-heart-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "12323",
+    "name": "Chetwyn Farm",
+    "commodity": "asparagus",
+    "roles": [
+      "seller"
+    ],
+    "grower_status": "not_established",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/hayward/fruit/chetwyn-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "12281",
+    "name": "Murray Family Farms",
+    "commodity": "blackberry",
+    "roles": [
+      "grower",
+      "seller"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/arvin/fruit/murray-family-farms/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10998",
+    "name": "Urban Tilth",
+    "commodity": "pear",
+    "roles": [],
+    "grower_status": "not_established",
+    "disposition": "role_unknown",
+    "assessment_note": "Community food-system organization supporting local growers; own pear production/sales not attributed.",
+    "listing_url": "https://caff.org/farms/united-states/california/richmond/vegetables/urban-tilth/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10895",
+    "name": "Rancho Notso Grande",
+    "commodity": "blackberry",
+    "roles": [
+      "grower",
+      "seller"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/hanford/fruit/rancho-notso-grande/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10895",
+    "name": "Rancho Notso Grande",
+    "commodity": "pecan",
+    "roles": [
+      "grower",
+      "seller"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/hanford/fruit/rancho-notso-grande/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10857",
+    "name": "Freshness Farms",
+    "commodity": "celery",
+    "roles": [
+      "seller"
+    ],
+    "grower_status": "not_established",
+    "disposition": "supported_role",
+    "assessment_note": "Aggregates local foods as well as farming; delivery supports seller role, not own celery/cucumber growing.",
+    "listing_url": "https://caff.org/farms/united-states/california/san-jose/vegetables/freshness-farms/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10857",
+    "name": "Freshness Farms",
+    "commodity": "cucumber",
+    "roles": [
+      "seller"
+    ],
+    "grower_status": "not_established",
+    "disposition": "supported_role",
+    "assessment_note": "Aggregates local foods as well as farming; delivery supports seller role, not own celery/cucumber growing.",
+    "listing_url": "https://caff.org/farms/united-states/california/san-jose/vegetables/freshness-farms/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10753",
+    "name": "Sage Mountain Farm",
+    "commodity": "asparagus",
+    "roles": [
+      "grower",
+      "seller"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/anza/vegetables/sage-mountain-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10751",
+    "name": "Rodney Kawano Farms",
+    "commodity": "cucumber",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/oceanside/vegetables/rodney-kawano-farms/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10722",
+    "name": "JR Organics",
+    "commodity": "blackberry",
+    "roles": [],
+    "grower_status": "not_established",
+    "disposition": "role_unknown",
+    "assessment_note": "Family farming history with product list, but commodity-specific own growing versus sourcing not established.",
+    "listing_url": "https://caff.org/farms/united-states/california/escondido/vegetables/jr-organics/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10722",
+    "name": "JR Organics",
+    "commodity": "cucumber",
+    "roles": [],
+    "grower_status": "not_established",
+    "disposition": "role_unknown",
+    "assessment_note": "Family farming history with product list, but commodity-specific own growing versus sourcing not established.",
+    "listing_url": "https://caff.org/farms/united-states/california/escondido/vegetables/jr-organics/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10600",
+    "name": "Chelito Organic Farms",
+    "commodity": "celery",
+    "roles": [],
+    "grower_status": "not_established",
+    "disposition": "role_unknown",
+    "assessment_note": "Spanish description states family experience in strawberries/vegetables, not commodity-specific own celery production.",
+    "listing_url": "https://caff.org/farms/united-states/california/watsonville/vegetables/chelito-organic-farms/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10588",
+    "name": "Kitchel Family Organics",
+    "commodity": "pecan",
+    "roles": [
+      "grower",
+      "seller"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/los-molinos/nuts/kitchel-family-organics/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10567",
+    "name": "GRUB CSA Farm",
+    "commodity": "celery",
+    "roles": [
+      "seller"
+    ],
+    "grower_status": "not_established",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/chico/vegetables/grub-csa-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10544",
+    "name": "Root 64 Sacramento",
+    "commodity": "cucumber",
+    "roles": [
+      "grower",
+      "seller"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/sacramento/vegetables/root-64-sacramento/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10509",
+    "name": "Riverdog Farm",
+    "commodity": "asparagus",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/guinda/vegetables/riverdog-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10506",
+    "name": "Capay Valley Farm Shop",
+    "commodity": "cucumber",
+    "roles": [
+      "seller",
+      "distributor"
+    ],
+    "grower_status": "not_established",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/esparto/vegetables/capay-valley-farm-shop/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10506",
+    "name": "Capay Valley Farm Shop",
+    "commodity": "asparagus",
+    "roles": [
+      "seller",
+      "distributor"
+    ],
+    "grower_status": "not_established",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/esparto/vegetables/capay-valley-farm-shop/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10502",
+    "name": "UC Davis Student Experimental Farm",
+    "commodity": "cucumber",
+    "roles": [],
+    "grower_status": "not_established",
+    "disposition": "role_unknown",
+    "assessment_note": "Description supports flower growing/CSA only; cucumber listing alone does not resolve its role.",
+    "listing_url": "https://caff.org/farms/united-states/california/davis/flowers/uc-davis-student-experimental-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10415",
+    "name": "Catalan Farms",
+    "commodity": "celery",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/hollister/vegetables/catalan-farms/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10267",
+    "name": "Deep Seeded Community Farm",
+    "commodity": "cucumber",
+    "roles": [
+      "seller"
+    ],
+    "grower_status": "not_established",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/arcata/vegetables/10267/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10263",
+    "name": "Sierra Valley Farms",
+    "commodity": "asparagus",
+    "roles": [
+      "grower",
+      "seller"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/beckwourth/vegetables/sierra-valley-farms/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10261",
+    "name": "Star Route Farms",
+    "commodity": "coffee",
+    "roles": [],
+    "grower_status": "not_established",
+    "disposition": "role_unknown",
+    "assessment_note": "Organic vegetable growing description does not establish that the farm grows or sells the listed coffee.",
+    "listing_url": "https://caff.org/farms/united-states/california/bolinas/vegetables/star-route-farms/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10253",
+    "name": "Noyo Food Forest",
+    "commodity": "cucumber",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/fort-bragg/vegetables/10253/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10242",
+    "name": "Bramble Tail Homestead",
+    "commodity": "cucumber",
+    "roles": [],
+    "grower_status": "not_established",
+    "disposition": "role_unknown",
+    "assessment_note": "Tending land and raising animals does not establish own cucumber production; product list alone is insufficient.",
+    "listing_url": "https://caff.org/farms/united-states/california/sebastopol/vegetables/bramble-tail-homestead/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10220",
+    "name": "Laguna Farm",
+    "commodity": "pear",
+    "roles": [
+      "grower",
+      "seller"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/sebastopol/vegetables/laguna-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10220",
+    "name": "Laguna Farm",
+    "commodity": "celery",
+    "roles": [
+      "grower",
+      "seller"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/sebastopol/vegetables/laguna-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10220",
+    "name": "Laguna Farm",
+    "commodity": "cucumber",
+    "roles": [
+      "grower",
+      "seller"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/sebastopol/vegetables/laguna-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10217",
+    "name": "County Line Harvest",
+    "commodity": "celery",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/petaluma/vegetables/county-line-harvest/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10215",
+    "name": "EarthSeed Farm",
+    "commodity": "blackberry",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/sebastopol/fruit/10215/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10215",
+    "name": "EarthSeed Farm",
+    "commodity": "pear",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/sebastopol/fruit/10215/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10212",
+    "name": "Green Thumb Organics Farms",
+    "commodity": "celery",
+    "roles": [
+      "seller"
+    ],
+    "grower_status": "not_established",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/san-juan-bautista/vegetables/green-thumb-organics-farms/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10124",
+    "name": "Bounty of the Valley Farms",
+    "commodity": "asparagus",
+    "roles": [
+      "seller"
+    ],
+    "grower_status": "not_established",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/greenfield/vegetables/bounty-of-the-valley-farms/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10122",
+    "name": "Live Earth Farm",
+    "commodity": "pear",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/corralitos/fruit/live-earth-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10071",
+    "name": "Dewlson Family Farm",
+    "commodity": "coffee",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/santa-maria/fruit/dewlson-family-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10064",
+    "name": "Serendipity Farms",
+    "commodity": "blackberry",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/aromas/vegetables/serendipity-farms/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10029",
+    "name": "Fifth Crow Farm",
+    "commodity": "pear",
+    "roles": [],
+    "grower_status": "not_established",
+    "disposition": "role_unknown",
+    "assessment_note": "Stewardship and farm identity are insufficient to attribute pear growing or selling.",
+    "listing_url": "https://caff.org/farms/united-states/california/pescadero/fruit/fifth-crow-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "10018",
+    "name": "Nourish Farm",
+    "commodity": "cucumber",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/turlock/vegetables/nourish-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9961",
+    "name": "Luna Farm",
+    "commodity": "cucumber",
+    "roles": [
+      "seller"
+    ],
+    "grower_status": "not_established",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/redcrest/vegetables/luna-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9915",
+    "name": "Dare 2 Dream Farms",
+    "commodity": "cucumber",
+    "roles": [],
+    "grower_status": "not_established",
+    "disposition": "role_unknown",
+    "assessment_note": "Locally grown produce could be sourced; own cucumber production not explicit.",
+    "listing_url": "https://caff.org/farms/united-states/california/lompoc/eggs/dare-2-dream-farms/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9877",
+    "name": "Little Moon Farm",
+    "commodity": "cucumber",
+    "roles": [
+      "grower",
+      "seller"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/napa/vegetables/little-moon-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9748",
+    "name": "North Coast Natural Produce",
+    "commodity": "cucumber",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/hydesville/vegetables/north-coast-natural-produce/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9752",
+    "name": "Los Harvest Boys",
+    "commodity": "pear",
+    "roles": [],
+    "grower_status": "not_established",
+    "disposition": "role_unknown",
+    "assessment_note": "Agricultural family history lacks commodity-specific production or sales attribution.",
+    "listing_url": "https://caff.org/farms/united-states/california/nipomo/vegetables/los-harvest-boys/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9752",
+    "name": "Los Harvest Boys",
+    "commodity": "celery",
+    "roles": [],
+    "grower_status": "not_established",
+    "disposition": "role_unknown",
+    "assessment_note": "Agricultural family history lacks commodity-specific production or sales attribution.",
+    "listing_url": "https://caff.org/farms/united-states/california/nipomo/vegetables/los-harvest-boys/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9720",
+    "name": "Durst Organic Growers",
+    "commodity": "asparagus",
+    "roles": [
+      "grower",
+      "distributor"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/esparto/vegetables/durst-organic-growers/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9718",
+    "name": "Capay Hills Orchard",
+    "commodity": "grapefruit",
+    "roles": [],
+    "grower_status": "not_established",
+    "disposition": "role_unknown",
+    "assessment_note": "Own growing/selling claims are explicitly about almonds, not the listed grapefruit.",
+    "listing_url": "https://caff.org/farms/united-states/california/esparto/nuts/capay-hills-orchard-2/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9683",
+    "name": "Talley Farms",
+    "commodity": "blackberry",
+    "roles": [
+      "seller"
+    ],
+    "grower_status": "not_established",
+    "disposition": "supported_role",
+    "assessment_note": "CSA explicitly includes partner-farm produce. Seller supported, but individual listed crops are not attributed to own farm.",
+    "listing_url": "https://caff.org/farms/united-states/california/arroyo-grande/vegetables/talley-farms/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9683",
+    "name": "Talley Farms",
+    "commodity": "pear",
+    "roles": [
+      "seller"
+    ],
+    "grower_status": "not_established",
+    "disposition": "supported_role",
+    "assessment_note": "CSA explicitly includes partner-farm produce. Seller supported, but individual listed crops are not attributed to own farm.",
+    "listing_url": "https://caff.org/farms/united-states/california/arroyo-grande/vegetables/talley-farms/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9683",
+    "name": "Talley Farms",
+    "commodity": "celery",
+    "roles": [
+      "seller"
+    ],
+    "grower_status": "not_established",
+    "disposition": "supported_role",
+    "assessment_note": "CSA explicitly includes partner-farm produce. Seller supported, but individual listed crops are not attributed to own farm.",
+    "listing_url": "https://caff.org/farms/united-states/california/arroyo-grande/vegetables/talley-farms/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9671",
+    "name": "Lantern Farm",
+    "commodity": "cucumber",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/cloverdale/vegetables/lantern-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9664",
+    "name": "Oya Organics",
+    "commodity": "cucumber",
+    "roles": [
+      "grower",
+      "distributor"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/hollister/vegetables/oya-organics/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9654",
+    "name": "Riverfront Farm",
+    "commodity": "cucumber",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/west-sacramento/vegetables/riverfront-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9599",
+    "name": "Big Mesa Farm",
+    "commodity": "cucumber",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/comptche/vegetables/big-mesa-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9526",
+    "name": "Tierra Vegetables",
+    "commodity": "asparagus",
+    "roles": [
+      "grower",
+      "seller"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/santa-rosa/vegetables/tierra-vegetables/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9395",
+    "name": "Singing Frog Farm",
+    "commodity": "cucumber",
+    "roles": [
+      "grower",
+      "seller"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/pleasant-grove/vegetables/singing-frog-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9277",
+    "name": "Alameda Point Collaborative Farm2Market",
+    "commodity": "asparagus",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/alameda/vegetables/alameda-point-collaborative-farm2market/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9315",
+    "name": "Prevedelli Farms",
+    "commodity": "pear",
+    "roles": [
+      "grower",
+      "seller"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/corralitos/fruit/prevedelli-farms/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9296",
+    "name": "Petaluma Bounty",
+    "commodity": "pear",
+    "roles": [],
+    "grower_status": "not_established",
+    "disposition": "role_unknown",
+    "assessment_note": "Mission statement does not establish own production or sales of pears/cucumbers.",
+    "listing_url": "https://caff.org/farms/united-states/california/petaluma/vegetables/petaluma-bounty/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9296",
+    "name": "Petaluma Bounty",
+    "commodity": "cucumber",
+    "roles": [],
+    "grower_status": "not_established",
+    "disposition": "role_unknown",
+    "assessment_note": "Mission statement does not establish own production or sales of pears/cucumbers.",
+    "listing_url": "https://caff.org/farms/united-states/california/petaluma/vegetables/petaluma-bounty/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9272",
+    "name": "Stonybrook Canyon Farm",
+    "commodity": "pear",
+    "roles": [
+      "grower",
+      "seller"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/castro-valley/fruit/stonybrook-canyon-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9249",
+    "name": "Devil’s Gulch Ranch",
+    "commodity": "coffee",
+    "roles": [
+      "handler"
+    ],
+    "grower_status": "not_established",
+    "disposition": "supported_role",
+    "assessment_note": "Imported Haitian coffee partnership supports handling/importing; no evidence of California coffee growing or processing stage.",
+    "listing_url": "https://caff.org/farms/united-states/california/nicasio/pork/devils-gulch-ranch/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9230",
+    "name": "Radical Family Farms",
+    "commodity": "celery",
+    "roles": [
+      "seller"
+    ],
+    "grower_status": "not_established",
+    "disposition": "supported_role",
+    "assessment_note": "Chinese celery is an explicitly named specialty form. Selling own produce is supported; celery-specific growing remains unresolved.",
+    "listing_url": "https://caff.org/farms/united-states/california/sebastopol/vegetables/radical-family-farms/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9215",
+    "name": "Oz Farm",
+    "commodity": "pear",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/manchester/flowers/oz-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9196",
+    "name": "Duxberry Farm",
+    "commodity": "pear",
+    "roles": [
+      "grower",
+      "processor"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/bolinas/fruit/duxberry-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9164",
+    "name": "Frog Hollow Farm",
+    "commodity": "pear",
+    "roles": [
+      "grower",
+      "seller",
+      "processor"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/brentwood/fruit/frog-hollow-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9142",
+    "name": "Pink Barn Farm",
+    "commodity": "cucumber",
+    "roles": [
+      "grower",
+      "seller"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/sebastopol/vegetables/pink-barn-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9126",
+    "name": "Common Roots Farm",
+    "commodity": "cucumber",
+    "roles": [
+      "seller"
+    ],
+    "grower_status": "not_established",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/santa-cruz/plants-nursery/common-roots-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9087",
+    "name": "Shakefork Community Farm",
+    "commodity": "cucumber",
+    "roles": [],
+    "grower_status": "not_established",
+    "disposition": "role_unknown",
+    "assessment_note": "General produce/livestock and compost statements do not clearly attribute cucumber growing or selling.",
+    "listing_url": "https://caff.org/farms/united-states/california/carlotta/beef/shakefork-community-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9104",
+    "name": "Birdsong Orchards",
+    "commodity": "pear",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/watsonville/fruit/birdsong-orchards/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9077",
+    "name": "Veggielution",
+    "commodity": "pear",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/san-jose/vegetables/veggielution/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9077",
+    "name": "Veggielution",
+    "commodity": "cucumber",
+    "roles": [
+      "grower"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/san-jose/vegetables/veggielution/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9054",
+    "name": "Coyote Family Farm",
+    "commodity": "cucumber",
+    "roles": [
+      "grower",
+      "seller"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/penngrove/flowers/coyote-family-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9049",
+    "name": "Chiatri de Laguna Farm",
+    "commodity": "cucumber",
+    "roles": [
+      "seller"
+    ],
+    "grower_status": "not_established",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/santa-rosa/flowers/chiatri-de-laguna-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9020",
+    "name": "Red H Farm",
+    "commodity": "cucumber",
+    "roles": [
+      "grower",
+      "seller"
+    ],
+    "grower_status": "self_reported_grower",
+    "disposition": "supported_role",
+    "assessment_note": "Self-reported production or sales statement reviewed together with the specific commodity list. No independent certification/site validation claimed.",
+    "listing_url": "https://caff.org/farms/united-states/california/sebastopol/vegetables/red-h-farm/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  },
+  {
+    "business_id": "9016",
+    "name": "Kiss the Flower Honey Co.",
+    "commodity": "blackberry",
+    "roles": [],
+    "grower_status": "not_established",
+    "disposition": "excluded_noncommodity_mention",
+    "assessment_note": "Blackberry honey is a honey floral-source description, not blackberry fruit production or selling. Excluded from fruit ledger.",
+    "listing_url": "https://caff.org/farms/united-states/california/sebastopol/honey/kiss-the-flower-honey-co/",
+    "checked_on": "2026-11-03",
+    "reviewed_by": "Codex"
+  }
+]

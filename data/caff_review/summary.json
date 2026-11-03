@@ -1,0 +1,74 @@
+{
+  "checked_on": "2026-11-03",
+  "reviewed_by": "Codex",
+  "api_advertised_total": 413,
+  "public_records_returned": 412,
+  "unique_public_records": 412,
+  "keyword_relevant_listings": 98,
+  "reviewed_business_commodity_pairs": 120,
+  "excluded_noncommodity_mentions": 2,
+  "ledger_business_commodity_pairs": 118,
+  "supported_pairs": 96,
+  "unknown_pairs": 22,
+  "businesses_with_supported_roles": 79,
+  "businesses_with_unknown_pairs": 17,
+  "by_commodity": {
+    "blackberry": {
+      "pairs": 14,
+      "supported": 13,
+      "unknown": 1,
+      "growers": 10
+    },
+    "grapefruit": {
+      "pairs": 7,
+      "supported": 5,
+      "unknown": 2,
+      "growers": 4
+    },
+    "pear": {
+      "pairs": 27,
+      "supported": 20,
+      "unknown": 7,
+      "growers": 18
+    },
+    "celery": {
+      "pairs": 13,
+      "supported": 10,
+      "unknown": 3,
+      "growers": 4
+    },
+    "cucumber": {
+      "pairs": 42,
+      "supported": 34,
+      "unknown": 8,
+      "growers": 27
+    },
+    "asparagus": {
+      "pairs": 9,
+      "supported": 9,
+      "unknown": 0,
+      "growers": 6
+    },
+    "coffee": {
+      "pairs": 4,
+      "supported": 3,
+      "unknown": 1,
+      "growers": 2
+    },
+    "pecan": {
+      "pairs": 2,
+      "supported": 2,
+      "unknown": 0,
+      "growers": 2
+    }
+  },
+  "limitations": [
+    "Five public API pages returned 412 distinct records, while the API advertises 413. Patel Ranch was checked separately and was already present. One advertised record remains unidentified; full advertised-directory coverage is not claimed.",
+    "Role assertions are agent-reviewed published self-reports, not independently verified farm sites or certifications.",
+    "Some descriptions are old or unclaimed; current production must be confirmed before operational use.",
+    "Cross-directory identity resolution is required before combining CAFF and CCOF graphs.",
+    "Commodity names in nursery, honey or animal-browse contexts do not establish fresh produce."
+  ],
+  "paginated_records": 412,
+  "supplemental_records": 0
+}

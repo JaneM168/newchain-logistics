@@ -1,6 +1,6 @@
 """Classify manually reviewed, commodity-specific CAFF role evidence.
 
-No text heuristics infer production. An accepted review asserts that a human
+No text heuristics infer production. An accepted review asserts that the named reviewer
 checked the cited source and its commodity-specific statement.
 """
 import argparse

@@ -80,7 +80,7 @@ These networks help explore cold-chain candidates, but do not assign a common st
 
 The supplied CAFF filter screenshot shows four separate dimensions: **Practices & Services**, **Sales Outlets**, **Sells in**, and combined **Crops / Products**. A combined commodity label does not distinguish growing from resale. A sales region is not a farm location, Wholesale is not a commodity, and Certified Organic alone does not establish a specific crop grown. Broad Fruit/Vegetables categories do not prove blackberry, pear or another specific commodity.
 
-`data/caff_role_evidence.csv` is an empty input ledger, not collected CAFF data. Live access to caff.org is still blocked by the cloud network policy; no individual CAFF business has been verified or added. Fill one row per business, canonical commodity and evidence item:
+`data/caff_role_evidence.csv` contains the reviewed CAFF role evidence collected on November 3, 2026. Live access now works. The review covers listings mentioning our eight modeled commodities; it is not a classification of every commodity CAFF lists. See `data/caff_review/` for source text, decisions, unresolved cases and coverage limits. Each row describes one business, canonical commodity and evidence item:
 
 - `business_id`, `name`, `listing_url`, `address`, `state`, `zip`: consistent business metadata. State should be the full US state name or its two-letter abbreviation. The current city parser expects street, city, county, state/ZIP, country segments; malformed or non-US locations remain unresolved.
 - `commodity`: coffee, pecan, blackberry, grapefruit, pear, celery, cucumber or asparagus. Do not expand a broad Fruit listing into specific fruit commodities.
@@ -105,3 +105,33 @@ To include reviewed records in the networks:
 ```
 
 Supported growers enter the crop stage; supported sellers/handlers/processors/packers/distributors enter the general product/service stage. Coffee processing/green/roasted sub-stages are not inferred from generic roles. Unknown records go to the commodity review CSV and never create grower or product edges. Other unsupported commodity keys cause a clear error. CAFF IDs use a `caff:` namespace. Cross-directory duplicate businesses require manual entity resolution before combined-network conclusions; the importer does not infer identity from similar names. Keep the earlier CCOF evidence distinction: its category-based nodes are directory-supported candidates, not independently confirmed physical farms.
+
+### Completed CAFF directory review
+
+The public GeoDirectory API returned 412 distinct records across five pages (413 advertised). Patel Ranch was checked separately but was already present. One advertised record remains unidentified; full advertised-directory coverage is not claimed. All retrieved descriptions and detailed commodity lists were screened for the eight modeled commodities, yielding 98 relevant listings. Each relevant description was reviewed by Codex. Two mentions were excluded: blackberry browse in a livestock listing and blackberry-floral-source honey. Ninety-six businesses remain, represented by 118 business/commodity pairs. Supported roles were assigned to 96 pairs across 79 businesses; 22 pairs across 17 businesses remain unknown. "Supported" means a published self-report was reviewed, not independently confirmed production.
+
+| Commodity | Pairs with supported role | Unknown pairs | Self-reported growers |
+| --- | ---: | ---: | ---: |
+| Blackberry | 13 | 1 | 10 |
+| Grapefruit | 5 | 2 | 4 |
+| Pear | 20 | 7 | 18 |
+| Celery | 10 | 3 | 4 |
+| Cucumber | 34 | 8 | 27 |
+| Asparagus | 9 | 0 | 6 |
+| Coffee | 3 | 1 | 2 |
+| Pecan | 2 | 0 | 2 |
+
+Review files:
+
+- `data/caff_review/inventory.json`: all 412 inspected public listing IDs/URLs and target-commodity screening results.
+- `data/caff_review/assessments.csv` and `.json`: every reviewed business/commodity pair, its supported roles, whether growing is established, source URL and decision notes, including exclusions.
+- `data/caff_review/source_listings.json`: reviewed listing descriptions and product lists as retrieved; source websites were not independently visited or certified.
+- `data/caff_review/classifications.csv` / `.json`: evidence-preserving importer output.
+- `data/caff_review/unknown_roles.csv`: unresolved role cases requiring stronger published evidence or direct confirmation.
+- `data/caff_review/summary.json`: counts and limitations.
+
+Context matters: own-growing descriptions read alongside that farm's specific commodity list support a self-reported grower role. A food hub or CSA explicitly sourcing from partner farms receives a seller/distributor role without attributing every commodity to its own farm. Historical pear-growing stories, general farm names, flower-growing descriptions with cucumber product lists and almond-growing descriptions with grapefruit product lists do not establish current growing of those target crops. Roles may overlap and listing descriptions may be old or unclaimed.
+
+Hathaway Hills lists pear/blackberry jams and fruit butters: processor/seller is supported, but fresh-produce handling is not. Duxberry also describes growing for processed products. Chinese celery and Armenian cucumber are specialty forms retained in original evidence and must not be assumed operationally interchangeable with other varieties. This review assigns business roles, not refrigeration suitability, crop volumes or verified physical sites.
+
+CAFF records have not been merged into the existing CCOF visualizations: cross-directory identities and duplicate farms must first be resolved. Regenerating the base graph without `--caff-evidence` preserves its existing coverage. Unknown cases remain outside all graph edges if imported later.
