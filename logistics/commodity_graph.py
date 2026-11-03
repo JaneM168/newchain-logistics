@@ -8,6 +8,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 import geonamescache
 from geo_utils import distance, normalize
+from role_evidence import read_evidence
 
 STAGES = {'coffee': ['crop', 'green_processing', 'roasted', 'general_product'], 'pecan': ['crop', 'general_product']}
 FRESH_LABELS = {
@@ -84,6 +85,30 @@ def related_labels(row, commodity):
             for value in row[field].split(';') if re.search(pattern, value, re.I)]
 
 
+def caff_nodes(records, commodity, index, states):
+    nodes, review = [], []
+    for record in records:
+        if record['commodity'] != commodity:
+            continue
+        evidence_roles = record['roles']
+        assigned = []
+        if 'grower' in evidence_roles:
+            assigned.append('crop')
+        if set(evidence_roles) & {'seller', 'handler', 'processor', 'packer', 'distributor'}:
+            assigned.append('general_product')
+        row = dict(url=record['listing_url'], name=record['name'], address=record['address'],
+                   state=record['state'], zip=record['zip'], crop_labels='', product_service_labels='',
+                   source_directory='CAFF', role_status=record['role_status'], role_evidence=record['evidence'],
+                   listed_labels=record['listed_labels'], schema='caff_reviewed_evidence')
+        # CAFF IDs are namespaced; matching across directories requires explicit review.
+        business_id = 'caff:' + record['business_id']
+        if not assigned:
+            review.append(dict(row, id=business_id, roles=[], reason='commodity_listed_role_unknown'))
+        else:
+            nodes.append(dict(row, id=business_id, roles=assigned, **locate(row, index, states)))
+    return nodes, review
+
+
 def city_index():
     gc = geonamescache.GeonamesCache(min_city_population=500)
     index = defaultdict(dict)
@@ -139,11 +164,16 @@ def main():
     ap.add_argument('--input', type=Path, default=Path(__file__).resolve().parents[1] / 'ccof_members.csv')
     ap.add_argument('--out', type=Path, default=Path(__file__).resolve().parents[1] / 'visualizations')
     ap.add_argument('-k', type=int, default=5)
+    ap.add_argument('--caff-evidence', type=Path, help='Reviewed CAFF evidence CSV; unknown roles enter review, not graph')
     args = ap.parse_args()
     if args.k < 1:
         ap.error('K must be positive')
     rows = list(read_members(args.input))
     index, states = city_index()
+    caff_records = read_evidence(args.caff_evidence) if args.caff_evidence else []
+    unknown_commodities = {r['commodity'] for r in caff_records} - set(STAGES)
+    if unknown_commodities:
+        ap.error(f"CAFF commodity must be a supported canonical name: {sorted(unknown_commodities)}")
     bundle = dict(k=args.k, colors=COLORS, cold_commodities=COLD_COMMODITIES, graphs={})
     args.out.mkdir(parents=True, exist_ok=True)
     for commodity, stages in STAGES.items():
@@ -154,6 +184,9 @@ def main():
                 nodes.append(dict(row, id=row['url'], roles=assigned, **locate(row,index,states)))
             elif related_labels(row, commodity):
                 review.append(dict(row, reason='category_unverified' if row['ambiguous_labels'] else 'related_label_outside_requested_stages'))
+        added_nodes, added_review = caff_nodes(caff_records, commodity, index, states)
+        nodes.extend(added_nodes)
+        review.extend(added_review)
         edges, gaps = stage_edges(nodes, stages, args.k)
         graph = dict(commodity=commodity, stages=stages, nodes=nodes, edges=edges, gaps=gaps,
                      summary=dict(businesses=len(nodes), stage_counts=dict(Counter(s for n in nodes for s in n['roles'])), located=sum(n['latitude'] is not None for n in nodes), unresolved=sum(n['latitude'] is None for n in nodes), edges=len(edges), review=len(review)))

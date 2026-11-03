@@ -75,3 +75,33 @@ Role counts overlap: a grower can also list the commodity as a product. Business
 Singular/plural labels are explicit aliases. Pear includes Asian Pears and the explicit Pear Packing service; celery includes Celery Hearts as a product. Seed (Cucumber), Pear Trees and unrelated Spearmint are not fresh-produce roles. A blackberry label in an uncertain 17-field record is exported for review rather than classified. The selected blackberry businesses include 39 California addresses and 7 in Baja California/Baja California Sur; cucumber includes 58 California and 3 Baja California addresses. The US city lookup leaves the Mexican addresses unresolved. The other four new commodity networks contain California addresses only. Unlisted processing stages are not inferred. A products/services listing does not prove the business owns refrigeration, provides logistics, buys the crop or trades with a linked grower.
 
 These networks help explore cold-chain candidates, but do not assign a common storage temperature or establish cold-chain compatibility. Commodity-specific temperature, humidity, chilling sensitivity, ethylene exposure, seasonality, volumes, vehicles and delivery windows must be collected before route or mixed-load planning. City approximations and unrestricted neighbor distances are still limitations; no verified street geocodes or driving times were added in this extension.
+
+## CAFF: evidence before assigning grower roles
+
+The supplied CAFF filter screenshot shows four separate dimensions: **Practices & Services**, **Sales Outlets**, **Sells in**, and combined **Crops / Products**. A combined commodity label does not distinguish growing from resale. A sales region is not a farm location, Wholesale is not a commodity, and Certified Organic alone does not establish a specific crop grown. Broad Fruit/Vegetables categories do not prove blackberry, pear or another specific commodity.
+
+`data/caff_role_evidence.csv` is an empty input ledger, not collected CAFF data. Live access to caff.org is still blocked by the cloud network policy; no individual CAFF business has been verified or added. Fill one row per business, canonical commodity and evidence item:
+
+- `business_id`, `name`, `listing_url`, `address`, `state`, `zip`: consistent business metadata. State should be the full US state name or its two-letter abbreviation. The current city parser expects street, city, county, state/ZIP, country segments; malformed or non-US locations remain unresolved.
+- `commodity`: coffee, pecan, blackberry, grapefruit, pear, celery, cucumber or asparagus. Do not expand a broad Fruit listing into specific fruit commodities.
+- `listed_label`: original directory label, preserved without assigning a role.
+- `asserted_role`: grower, seller, handler, processor, packer or distributor. A business may have several evidence rows for different roles.
+- `evidence_type`: published_statement, certification_record or direct_confirmation. Commodity-only labels, business names and marketing categories do not qualify.
+- `evidence_text`, `evidence_url`, `checked_on`: exact supporting statement or a documented confirmation, its accessible record URL, and actual review date in YYYY-MM-DD format. Do not invent dates, sources or direct confirmations. Keep private correspondence in controlled storage rather than committing it.
+- `review_status`: leave pending until a reviewer has checked that the source supports this specific business, commodity and role; use accepted only after that review. Code validates metadata completeness, not the truth of a statement or live page contents.
+
+Run classification separately:
+
+```sh
+.venv/bin/python logistics/role_evidence.py --input data/caff_role_evidence.csv --out /tmp/caff-review
+```
+
+This produces classifications.json, classifications.csv and unknown_roles.csv. Each decision retains original evidence text, URL, review date and reasons. Unaccepted, incomplete or label-only evidence stays **commodity_listed_role_unknown**. A documented seller role never implies grower. Accepted roles accumulate across evidence rows; identity/address conflicts fail rather than silently overwriting metadata. Reviewers must resolve contradictory role claims before accepting them.
+
+To include reviewed records in the networks:
+
+```sh
+.venv/bin/python logistics/commodity_graph.py --caff-evidence data/caff_role_evidence.csv -k 5
+```
+
+Supported growers enter the crop stage; supported sellers/handlers/processors/packers/distributors enter the general product/service stage. Coffee processing/green/roasted sub-stages are not inferred from generic roles. Unknown records go to the commodity review CSV and never create grower or product edges. Other unsupported commodity keys cause a clear error. CAFF IDs use a `caff:` namespace. Cross-directory duplicate businesses require manual entity resolution before combined-network conclusions; the importer does not infer identity from similar names. Keep the earlier CCOF evidence distinction: its category-based nodes are directory-supported candidates, not independently confirmed physical farms.
