@@ -7,17 +7,30 @@ class CommodityTests(unittest.TestCase):
     def test_explicit_columns(self):
         rows={r['name']:r for r in read_members(Path(__file__).resolve().parents[1] / 'ccof_members.csv')}
         self.assertEqual(roles(rows['BZL LLC dba Sundays on Toro'],'coffee'), ['crop'])
-        self.assertEqual(roles(rows['Cardiff Coffee Trading'],'coffee'), ['green_processing'])
+        self.assertEqual(roles(rows['Cardiff Coffee Trading'],'coffee'), ['green_coffee'])
         self.assertEqual(roles(rows['Blue Ridge Farms'],'pecan'), ['general_product'])
         self.assertNotIn('crop', roles(rows['Braga Organic Farms, Inc.'],'pecan'))
-        self.assertEqual(roles(rows['Coffee Works, LLC'],'coffee'), ['green_processing','roasted'])
+        self.assertEqual(roles(rows['Coffee Works, LLC'],'coffee'), ['roasted','processing_unspecified'])
         self.assertEqual(roles(rows['Cypress Grove Chevre dba Cypress Grove'],'coffee'), [])
     def test_nearest_next_stage_and_self_exclusion(self):
-        nodes=[dict(id='a',roles=['crop','green_processing'],latitude=0,longitude=0),dict(id='b',roles=['green_processing'],latitude=0,longitude=2),dict(id='c',roles=['green_processing'],latitude=0,longitude=1),dict(id='d',roles=['general_product'],latitude=0,longitude=.1)]
+        nodes=[dict(id='a',roles=['crop','green_coffee'],latitude=0,longitude=0),dict(id='b',roles=['green_coffee'],latitude=0,longitude=2),dict(id='c',roles=['green_coffee'],latitude=0,longitude=1),dict(id='d',roles=['general_product'],latitude=0,longitude=.1)]
         edges,gaps=stage_edges(nodes, STAGES['coffee'],1)
         self.assertEqual(len(edges),1)
         self.assertEqual((edges[0]['source'],edges[0]['target']),('a','c'))
         self.assertTrue(any(g['reason']=='missing_target_stage' for g in gaps))
+    def test_processing_does_not_imply_green_or_roasting(self):
+        row=dict(crop_labels='',product_service_labels='Coffee Processing')
+        self.assertEqual(roles(row,'coffee'),['processing_unspecified'])
+        row['product_service_labels']='Coffee (Green) ; Coffee Processing'
+        self.assertEqual(roles(row,'coffee'),['green_coffee','processing_unspecified'])
+        nodes=[dict(id='grower',roles=['crop'],latitude=0,longitude=0),
+               dict(id='processor',roles=['processing_unspecified'],latitude=0,longitude=1)]
+        edges,gaps=stage_edges(nodes,STAGES['coffee'],5)
+        self.assertEqual(edges,[])
+        graph=json.loads((Path(__file__).resolve().parents[1]/'visualizations'/'coffee.json').read_text())
+        self.assertEqual(sum('processing_unspecified' in n['roles'] for n in graph['nodes']),3)
+        self.assertEqual(sum('green_coffee' in n['roles'] for n in graph['nodes']),2)
+        self.assertFalse(any('processing_unspecified' in [e['from_stage'],e['to_stage']] for e in graph['edges']))
     def test_cold_chain_aliases_and_exclusions(self):
         cases=[('blackberry','Blackberries','Blackberry'),
                ('grapefruit','Grapefruit','Grapefruit'),

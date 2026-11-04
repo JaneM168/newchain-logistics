@@ -4,6 +4,10 @@
     "crop",
     "general_product"
   ],
+  "display_stages": [
+    "crop",
+    "general_product"
+  ],
   "nodes": [
     {
       "url": "https://ccof.org/directory-member/abundant-harvest-organics/",

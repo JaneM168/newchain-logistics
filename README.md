@@ -19,7 +19,7 @@ Open [the interactive visualization](visualizations/network.html) in a browser. 
 
 ## Model
 
-- Coffee: **crop grower (green) → processing / green coffee (amber) → roasted coffee (brown) → general coffee products/services (purple)**.
+- Coffee: **crop grower (green) → explicit green-coffee products (amber) → roasted coffee (brown) → general coffee products/services (purple)**.
 - Pecan: **crop grower (green) → pecan products/services (purple)**.
 
 Every business URL is one node. Businesses with multiple roles appear in multiple stage columns but retain one ID. For each source role, connect to up to K other located businesses in the immediately following stage. Self-links and stage skipping are excluded. Missing stages remain empty. Links are candidate spatial relationships, not observed transactions. Generic Coffee products/services is a requested modeling stage, not evidence of downstream position.
@@ -35,8 +35,9 @@ Exact semicolon-delimited labels determine roles:
 | Role | Source field and label |
 | --- | --- |
 | Coffee grower | Crops: Coffee |
-| Processing / green coffee | Products/services: Coffee Processing or Coffee (Green) |
-| Roasted | Products/services: Coffee (Roasted) |
+| Green coffee product | Products/services: Coffee (Green) |
+| Roasted product | Products/services: Coffee (Roasted) |
+| Processing, stage unknown | Products/services: Coffee Processing; displayed separately without flow edges |
 | General coffee | Products/services: Coffee |
 | Pecan grower | Crops: Pecan or Pecans |
 | Pecan product/service | Products/services: Pecan or Pecans |
@@ -45,7 +46,7 @@ Coffee drinks, pods and decaffeinated coffee alone do not establish these roles.
 
 ## Current coverage at K=5
 
-Coffee: 26 businesses, 24 city-located, 94 stage links. Role counts overlap: 1 grower, 5 processing/green, 16 roasted and 11 general coffee. Two additional coffee-related businesses fall outside the requested stage labels and appear in the review CSV. The graph contains one 24-business connected component plus two isolated businesses when direction is ignored.
+Coffee: 26 businesses, 24 city-located, 82 stage links. Role counts overlap: 1 grower, 2 green-coffee product, 16 roasted-product, 11 general coffee and 3 unspecified-processing. Two additional coffee-related businesses fall outside the requested stage labels and appear in the review CSV. The graph contains one 24-business connected component plus two isolated businesses when direction is ignored.
 
 Pecan: 6 products/services businesses, 4 city-located and no explicit pecan crop records. No grower-to-product links are fabricated; all six are isolated. All coffee and pecan businesses selected from this export have California addresses. That does not establish where their commodities were grown or comprehensive California coverage.
 
@@ -135,3 +136,11 @@ Context matters: own-growing descriptions read alongside that farm's specific co
 Hathaway Hills lists pear/blackberry jams and fruit butters: processor/seller is supported, but fresh-produce handling is not. Duxberry also describes growing for processed products. Chinese celery and Armenian cucumber are specialty forms retained in original evidence and must not be assumed operationally interchangeable with other varieties. This review assigns business roles, not refrigeration suitability, crop volumes or verified physical sites.
 
 CAFF records have not been merged into the existing CCOF visualizations: cross-directory identities and duplicate farms must first be resolved. Regenerating the base graph without `--caff-evidence` preserves its existing coverage. Unknown cases remain outside all graph edges if imported later.
+
+## Coffee processing clarification
+
+See [the three-business review](data/coffee_processing_review/REVIEW.md). `Coffee Processing` no longer places an operation in the green stage. The coffee flow is crop → explicit green-coffee product → explicit roasted-coffee product → general Coffee products/services. A separate gray `processing_unspecified` display lane preserves all generic processing listings, creates no sequence edges, and does not imply where processing occurs. Product availability does not prove an in-house operation.
+
+This changes the schema key `green_processing` to `green_coffee`. JSON `stages` contains only the sequenced stages, while `display_stages` also includes the unsequenced unknown-processing lane. Consumers should use `stages` for transitions and `display_stages` for displaying all roles. Coffee Works and F. Gavina retain their explicit roasted-product roles; Eberine retains its general Coffee product role. Actual operations remain unknown for all three until their official descriptions or certificate scopes can be accessed and reviewed. Live website verification was attempted but blocked; the required new domains were saved in the environment draft, without applying or publishing changes.
+
+At K=5, the corrected graph still has 26 businesses and 24 city-located businesses, but now 82 candidate stage links instead of 94. The previous 94-link and combined-processing/green outputs are superseded. The pre-existing combined coffee/pecan PNG and SVG have been regenerated; all six fresh-produce networks and CAFF role assessments remain unchanged.

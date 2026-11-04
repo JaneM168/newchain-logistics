@@ -1,0 +1,53 @@
+[
+  {
+    "name": "Coffee Works, LLC",
+    "business_id": "https://ccof.org/directory-member/coffee-works-llc/",
+    "listed_product_service_labels": "Coffee (Roasted) ; Coffee Processing",
+    "explicit_green_product": false,
+    "explicit_roasted_product": true,
+    "processing_operation": "unknown",
+    "green_cherry_processing_confirmed": false,
+    "roasting_operation_confirmed": false,
+    "evidence_basis": "Existing CCOF export labels only; not a current live-site verification",
+    "source_snapshot_sha256": "784d4984a74fb542abd0efd168ef3a47e57e2e2b4944503e83147c0e4a53eb06",
+    "directory_url": "https://ccof.org/directory-member/coffee-works-llc/",
+    "official_website": "http://www.coffeeworks.com",
+    "checked_on": "2026-11-04",
+    "external_access_status": "blocked_by_network_policy",
+    "next_verification": "Read official operations description or current certificate product scope; identify coffee input form, actual operations, and output form. No contacting business performed."
+  },
+  {
+    "name": "Eberine Enterprises, Inc.",
+    "business_id": "https://ccof.org/directory-member/eberine-enterprises-inc/",
+    "listed_product_service_labels": "Coffee ; Coffee (Decaffeinated) ; Coffee Pods ; Coffee Processing",
+    "explicit_green_product": false,
+    "explicit_roasted_product": false,
+    "processing_operation": "unknown",
+    "green_cherry_processing_confirmed": false,
+    "roasting_operation_confirmed": false,
+    "evidence_basis": "Existing CCOF export labels only; not a current live-site verification",
+    "source_snapshot_sha256": "784d4984a74fb542abd0efd168ef3a47e57e2e2b4944503e83147c0e4a53eb06",
+    "directory_url": "https://ccof.org/directory-member/eberine-enterprises-inc/",
+    "official_website": "http://www.eurocoffee.com",
+    "checked_on": "2026-11-04",
+    "external_access_status": "blocked_by_network_policy",
+    "next_verification": "Read official operations description or current certificate product scope; identify coffee input form, actual operations, and output form. No contacting business performed."
+  },
+  {
+    "name": "F. Gavina & Sons., Inc.",
+    "business_id": "https://ccof.org/directory-member/f-gavina-sons-inc/",
+    "listed_product_service_labels": "Coffee (Roasted) ; Coffee Pods ; Coffee Processing",
+    "explicit_green_product": false,
+    "explicit_roasted_product": true,
+    "processing_operation": "unknown",
+    "green_cherry_processing_confirmed": false,
+    "roasting_operation_confirmed": false,
+    "evidence_basis": "Existing CCOF export labels only; not a current live-site verification",
+    "source_snapshot_sha256": "784d4984a74fb542abd0efd168ef3a47e57e2e2b4944503e83147c0e4a53eb06",
+    "directory_url": "https://ccof.org/directory-member/f-gavina-sons-inc/",
+    "official_website": "",
+    "checked_on": "2026-11-04",
+    "external_access_status": "blocked_by_network_policy",
+    "next_verification": "Read official operations description or current certificate product scope; identify coffee input form, actual operations, and output form. No contacting business performed."
+  }
+]

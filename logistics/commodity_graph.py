@@ -10,7 +10,7 @@ import geonamescache
 from geo_utils import distance, normalize
 from role_evidence import read_evidence
 
-STAGES = {'coffee': ['crop', 'green_processing', 'roasted', 'general_product'], 'pecan': ['crop', 'general_product']}
+STAGES = {'coffee': ['crop', 'green_coffee', 'roasted', 'general_product'], 'pecan': ['crop', 'general_product']}
 FRESH_LABELS = {
     'pecan': {'pecan', 'pecans'},
     'blackberry': {'blackberry', 'blackberries'},
@@ -25,7 +25,7 @@ STAGES.update({commodity: ['crop', 'general_product'] for commodity in COLD_COMM
 # Explicit services/fresh forms; no frozen, juice, seeds or nursery trees inferred.
 PRODUCT_LABELS = {**FRESH_LABELS, 'celery': {'celery', 'celery hearts'},
                   'pear': FRESH_LABELS['pear'] | {'pear packing (client profile products only)'}}
-COLORS = {'crop': '#16803c', 'green_processing': '#c17a00', 'roasted': '#79503b', 'general_product': '#7555ca'}
+COLORS = {'crop': '#16803c', 'green_coffee': '#c17a00', 'roasted': '#79503b', 'general_product': '#7555ca', 'processing_unspecified': '#697586'}
 
 
 def read_members(path):
@@ -59,12 +59,14 @@ def roles(row, commodity):
     if commodity == 'coffee':
         if 'coffee' in crops:
             result.append('crop')
-        if products & {'coffee (green)', 'coffee processing'}:
-            result.append('green_processing')
+        if 'coffee (green)' in products:
+            result.append('green_coffee')
         if 'coffee (roasted)' in products:
             result.append('roasted')
         if 'coffee' in products:
             result.append('general_product')
+        if 'coffee processing' in products:
+            result.append('processing_unspecified')
     else:
         if crops & FRESH_LABELS[commodity]:
             result.append('crop')
@@ -188,7 +190,9 @@ def main():
         nodes.extend(added_nodes)
         review.extend(added_review)
         edges, gaps = stage_edges(nodes, stages, args.k)
-        graph = dict(commodity=commodity, stages=stages, nodes=nodes, edges=edges, gaps=gaps,
+        graph = dict(commodity=commodity, stages=stages,
+                     display_stages=stages + (['processing_unspecified'] if commodity == 'coffee' else []),
+                     nodes=nodes, edges=edges, gaps=gaps,
                      summary=dict(businesses=len(nodes), stage_counts=dict(Counter(s for n in nodes for s in n['roles'])), located=sum(n['latitude'] is not None for n in nodes), unresolved=sum(n['latitude'] is None for n in nodes), edges=len(edges), review=len(review)))
         bundle['graphs'][commodity] = graph
         (args.out/(commodity+'.json')).write_text(json.dumps(graph, indent=2, ensure_ascii=False))

@@ -2,9 +2,10 @@
   "k": 5,
   "colors": {
     "crop": "#16803c",
-    "green_processing": "#c17a00",
+    "green_coffee": "#c17a00",
     "roasted": "#79503b",
-    "general_product": "#7555ca"
+    "general_product": "#7555ca",
+    "processing_unspecified": "#697586"
   },
   "cold_commodities": [
     "blackberry",
@@ -19,9 +20,16 @@
       "commodity": "coffee",
       "stages": [
         "crop",
-        "green_processing",
+        "green_coffee",
         "roasted",
         "general_product"
+      ],
+      "display_stages": [
+        "crop",
+        "green_coffee",
+        "roasted",
+        "general_product",
+        "processing_unspecified"
       ],
       "nodes": [
         {
@@ -432,7 +440,7 @@
           "ambiguous_labels": "",
           "id": "https://ccof.org/directory-member/cardiff-coffee-trading/",
           "roles": [
-            "green_processing"
+            "green_coffee"
           ],
           "latitude": 33.15809,
           "longitude": -117.35059,
@@ -592,8 +600,8 @@
           "ambiguous_labels": "",
           "id": "https://ccof.org/directory-member/coffee-works-llc/",
           "roles": [
-            "green_processing",
-            "roasted"
+            "roasted",
+            "processing_unspecified"
           ],
           "latitude": 38.58157,
           "longitude": -121.4944,
@@ -689,8 +697,8 @@
           "ambiguous_labels": "",
           "id": "https://ccof.org/directory-member/eberine-enterprises-inc/",
           "roles": [
-            "green_processing",
-            "general_product"
+            "general_product",
+            "processing_unspecified"
           ],
           "latitude": 34.05223,
           "longitude": -118.24368,
@@ -755,8 +763,8 @@
           "ambiguous_labels": "",
           "id": "https://ccof.org/directory-member/f-gavina-sons-inc/",
           "roles": [
-            "green_processing",
-            "roasted"
+            "roasted",
+            "processing_unspecified"
           ],
           "latitude": null,
           "longitude": null,
@@ -851,7 +859,7 @@
           "ambiguous_labels": "",
           "id": "https://ccof.org/directory-member/four-sigma-foods-inc/",
           "roles": [
-            "green_processing",
+            "green_coffee",
             "general_product"
           ],
           "latitude": 33.99084,
@@ -867,42 +875,24 @@
           "source": "https://ccof.org/directory-member/bzl-llc-dba-sundays-on-toro/",
           "target": "https://ccof.org/directory-member/four-sigma-foods-inc/",
           "from_stage": "crop",
-          "to_stage": "green_processing",
+          "to_stage": "green_coffee",
           "rank": 1,
           "distance_km": 123.48822547036794,
           "distance_basis": "haversine_between_city_points"
         },
         {
           "source": "https://ccof.org/directory-member/bzl-llc-dba-sundays-on-toro/",
-          "target": "https://ccof.org/directory-member/eberine-enterprises-inc/",
-          "from_stage": "crop",
-          "to_stage": "green_processing",
-          "rank": 2,
-          "distance_km": 139.8486129764687,
-          "distance_basis": "haversine_between_city_points"
-        },
-        {
-          "source": "https://ccof.org/directory-member/bzl-llc-dba-sundays-on-toro/",
           "target": "https://ccof.org/directory-member/cardiff-coffee-trading/",
           "from_stage": "crop",
-          "to_stage": "green_processing",
-          "rank": 3,
+          "to_stage": "green_coffee",
+          "rank": 2,
           "distance_km": 258.4088275005651,
-          "distance_basis": "haversine_between_city_points"
-        },
-        {
-          "source": "https://ccof.org/directory-member/bzl-llc-dba-sundays-on-toro/",
-          "target": "https://ccof.org/directory-member/coffee-works-llc/",
-          "from_stage": "crop",
-          "to_stage": "green_processing",
-          "rank": 4,
-          "distance_km": 489.6883528313568,
           "distance_basis": "haversine_between_city_points"
         },
         {
           "source": "https://ccof.org/directory-member/cardiff-coffee-trading/",
           "target": "https://ccof.org/directory-member/better-buzz-coffee-company/",
-          "from_stage": "green_processing",
+          "from_stage": "green_coffee",
           "to_stage": "roasted",
           "rank": 1,
           "distance_km": 11.085044477122246,
@@ -911,7 +901,7 @@
         {
           "source": "https://ccof.org/directory-member/cardiff-coffee-trading/",
           "target": "https://ccof.org/directory-member/bird-rock-coffee-roasters-inc/",
-          "from_stage": "green_processing",
+          "from_stage": "green_coffee",
           "to_stage": "roasted",
           "rank": 2,
           "distance_km": 52.159175723474675,
@@ -920,7 +910,7 @@
         {
           "source": "https://ccof.org/directory-member/cardiff-coffee-trading/",
           "target": "https://ccof.org/directory-member/big-brothers-coffee-llc-dba-harlo-coffee-roasters/",
-          "from_stage": "green_processing",
+          "from_stage": "green_coffee",
           "to_stage": "roasted",
           "rank": 3,
           "distance_km": 113.61789346262806,
@@ -929,7 +919,7 @@
         {
           "source": "https://ccof.org/directory-member/cardiff-coffee-trading/",
           "target": "https://ccof.org/directory-member/canyon-coffee-llc/",
-          "from_stage": "green_processing",
+          "from_stage": "green_coffee",
           "to_stage": "roasted",
           "rank": 4,
           "distance_km": 129.32798392293478,
@@ -938,106 +928,16 @@
         {
           "source": "https://ccof.org/directory-member/cardiff-coffee-trading/",
           "target": "https://ccof.org/directory-member/city-bean-inc/",
-          "from_stage": "green_processing",
+          "from_stage": "green_coffee",
           "to_stage": "roasted",
           "rank": 5,
           "distance_km": 129.32798392293478,
           "distance_basis": "haversine_between_city_points"
         },
         {
-          "source": "https://ccof.org/directory-member/coffee-works-llc/",
-          "target": "https://ccof.org/directory-member/blue-bottle-coffee-llc/",
-          "from_stage": "green_processing",
-          "to_stage": "roasted",
-          "rank": 1,
-          "distance_km": 3.116939267691223,
-          "distance_basis": "haversine_between_city_points"
-        },
-        {
-          "source": "https://ccof.org/directory-member/coffee-works-llc/",
-          "target": "https://ccof.org/directory-member/addictive-coffee-roasters/",
-          "from_stage": "green_processing",
-          "to_stage": "roasted",
-          "rank": 2,
-          "distance_km": 112.9598266859152,
-          "distance_basis": "haversine_between_city_points"
-        },
-        {
-          "source": "https://ccof.org/directory-member/coffee-works-llc/",
-          "target": "https://ccof.org/directory-member/equator-coffees-llc/",
-          "from_stage": "green_processing",
-          "to_stage": "roasted",
-          "rank": 3,
-          "distance_km": 112.9598266859152,
-          "distance_basis": "haversine_between_city_points"
-        },
-        {
-          "source": "https://ccof.org/directory-member/coffee-works-llc/",
-          "target": "https://ccof.org/directory-member/flying-goat-coffee/",
-          "from_stage": "green_processing",
-          "to_stage": "roasted",
-          "rank": 4,
-          "distance_km": 119.51705280299556,
-          "distance_basis": "haversine_between_city_points"
-        },
-        {
-          "source": "https://ccof.org/directory-member/coffee-works-llc/",
-          "target": "https://ccof.org/directory-member/coffee-critic-inc-dba-black-oak-coffee-roasters/",
-          "from_stage": "green_processing",
-          "to_stage": "roasted",
-          "rank": 5,
-          "distance_km": 161.24993693341537,
-          "distance_basis": "haversine_between_city_points"
-        },
-        {
-          "source": "https://ccof.org/directory-member/eberine-enterprises-inc/",
-          "target": "https://ccof.org/directory-member/canyon-coffee-llc/",
-          "from_stage": "green_processing",
-          "to_stage": "roasted",
-          "rank": 1,
-          "distance_km": 0.0,
-          "distance_basis": "haversine_between_city_points"
-        },
-        {
-          "source": "https://ccof.org/directory-member/eberine-enterprises-inc/",
-          "target": "https://ccof.org/directory-member/city-bean-inc/",
-          "from_stage": "green_processing",
-          "to_stage": "roasted",
-          "rank": 2,
-          "distance_km": 0.0,
-          "distance_basis": "haversine_between_city_points"
-        },
-        {
-          "source": "https://ccof.org/directory-member/eberine-enterprises-inc/",
-          "target": "https://ccof.org/directory-member/big-brothers-coffee-llc-dba-harlo-coffee-roasters/",
-          "from_stage": "green_processing",
-          "to_stage": "roasted",
-          "rank": 3,
-          "distance_km": 40.69535552857219,
-          "distance_basis": "haversine_between_city_points"
-        },
-        {
-          "source": "https://ccof.org/directory-member/eberine-enterprises-inc/",
-          "target": "https://ccof.org/directory-member/better-buzz-coffee-company/",
-          "from_stage": "green_processing",
-          "to_stage": "roasted",
-          "rank": 4,
-          "distance_km": 132.55607843790963,
-          "distance_basis": "haversine_between_city_points"
-        },
-        {
-          "source": "https://ccof.org/directory-member/eberine-enterprises-inc/",
-          "target": "https://ccof.org/directory-member/bird-rock-coffee-roasters-inc/",
-          "from_stage": "green_processing",
-          "to_stage": "roasted",
-          "rank": 5,
-          "distance_km": 179.22339488961438,
-          "distance_basis": "haversine_between_city_points"
-        },
-        {
           "source": "https://ccof.org/directory-member/four-sigma-foods-inc/",
           "target": "https://ccof.org/directory-member/canyon-coffee-llc/",
-          "from_stage": "green_processing",
+          "from_stage": "green_coffee",
           "to_stage": "roasted",
           "rank": 1,
           "distance_km": 21.079634006482706,
@@ -1046,7 +946,7 @@
         {
           "source": "https://ccof.org/directory-member/four-sigma-foods-inc/",
           "target": "https://ccof.org/directory-member/city-bean-inc/",
-          "from_stage": "green_processing",
+          "from_stage": "green_coffee",
           "to_stage": "roasted",
           "rank": 2,
           "distance_km": 21.079634006482706,
@@ -1055,7 +955,7 @@
         {
           "source": "https://ccof.org/directory-member/four-sigma-foods-inc/",
           "target": "https://ccof.org/directory-member/big-brothers-coffee-llc-dba-harlo-coffee-roasters/",
-          "from_stage": "green_processing",
+          "from_stage": "green_coffee",
           "to_stage": "roasted",
           "rank": 3,
           "distance_km": 61.55702790903,
@@ -1064,7 +964,7 @@
         {
           "source": "https://ccof.org/directory-member/four-sigma-foods-inc/",
           "target": "https://ccof.org/directory-member/better-buzz-coffee-company/",
-          "from_stage": "green_processing",
+          "from_stage": "green_coffee",
           "to_stage": "roasted",
           "rank": 4,
           "distance_km": 142.99932403629822,
@@ -1073,7 +973,7 @@
         {
           "source": "https://ccof.org/directory-member/four-sigma-foods-inc/",
           "target": "https://ccof.org/directory-member/bird-rock-coffee-roasters-inc/",
-          "from_stage": "green_processing",
+          "from_stage": "green_coffee",
           "to_stage": "roasted",
           "rank": 5,
           "distance_km": 185.95113280119216,
@@ -1712,12 +1612,6 @@
       ],
       "gaps": [
         {
-          "source": "https://ccof.org/directory-member/f-gavina-sons-inc/",
-          "from_stage": "green_processing",
-          "to_stage": "roasted",
-          "reason": "source_unlocated"
-        },
-        {
           "source": "https://ccof.org/directory-member/aroma-roasters/",
           "from_stage": "roasted",
           "to_stage": "general_product",
@@ -1736,17 +1630,22 @@
           "general_product": 11,
           "roasted": 16,
           "crop": 1,
-          "green_processing": 5
+          "green_coffee": 2,
+          "processing_unspecified": 3
         },
         "located": 24,
         "unresolved": 2,
-        "edges": 94,
+        "edges": 82,
         "review": 2
       }
     },
     "pecan": {
       "commodity": "pecan",
       "stages": [
+        "crop",
+        "general_product"
+      ],
+      "display_stages": [
         "crop",
         "general_product"
       ],
@@ -1964,6 +1863,10 @@
     "blackberry": {
       "commodity": "blackberry",
       "stages": [
+        "crop",
+        "general_product"
+      ],
+      "display_stages": [
         "crop",
         "general_product"
       ],
@@ -4503,6 +4406,10 @@
         "crop",
         "general_product"
       ],
+      "display_stages": [
+        "crop",
+        "general_product"
+      ],
       "nodes": [
         {
           "url": "https://ccof.org/directory-member/abundant-harvest-organics/",
@@ -6230,6 +6137,10 @@
     "pear": {
       "commodity": "pear",
       "stages": [
+        "crop",
+        "general_product"
+      ],
+      "display_stages": [
         "crop",
         "general_product"
       ],
@@ -9631,6 +9542,10 @@
     "celery": {
       "commodity": "celery",
       "stages": [
+        "crop",
+        "general_product"
+      ],
+      "display_stages": [
         "crop",
         "general_product"
       ],
@@ -13067,6 +12982,10 @@
     "cucumber": {
       "commodity": "cucumber",
       "stages": [
+        "crop",
+        "general_product"
+      ],
+      "display_stages": [
         "crop",
         "general_product"
       ],
@@ -16863,6 +16782,10 @@
     "asparagus": {
       "commodity": "asparagus",
       "stages": [
+        "crop",
+        "general_product"
+      ],
+      "display_stages": [
         "crop",
         "general_product"
       ],
